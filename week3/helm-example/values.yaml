@@ -1,0 +1,45 @@
+DB:
+  DB_USER: postgres
+  DB_PASS: postgres
+  DB_HOST: db-pgpool
+  DB_NAME: postgres
+RESULT:
+  IMAGE: registry.cn-hangzhou.aliyuncs.com/kube_xyx/result
+  TAG: env
+VOTE:
+  IMAGE: registry.cn-hangzhou.aliyuncs.com/kube_xyx/vote
+  TAG: env
+WORKER:
+  IMAGE: registry.cn-hangzhou.aliyuncs.com/kube_xyx/worker
+  TAG: env
+voteCM:
+  OPTION_A: InfoQ
+  OPTION_B: GeekBang
+  #dependcy 
+  REDIS_HOST: redis-master
+REGISTRY:
+  auths:
+    registry.cn-hangzhou.aliyuncs.com:
+      username: xyx11332
+      password: xyx456789.
+      auth: eHl4MTEzMzI6eHl4NDU2Nzg5Lg==
+
+# 覆写子 chart 的默认值
+redis:
+  enabled: true
+  fullnameOverride: redis
+  auth:
+    enabled: false
+
+postgresql-ha:
+  enabled: true
+  fullnameOverride: db
+  global:
+    postgresql:
+      username: postgres
+      password: postgres
+      database: postgres
+      repmgrUsername: postgres
+      repmgrPassword: postgres
+      
+    

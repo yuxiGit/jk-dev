@@ -1,0 +1,4 @@
+OPTIONA=lsk
+OPTIONB=strace
+REDIS_HOST=redis
+
