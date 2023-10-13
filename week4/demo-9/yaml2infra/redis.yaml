@@ -12,7 +12,5 @@ spec:
       name: "redis"
       key: "password"
       namespace: "crossplane-system"
-    vpcidRef:
-      name: "example-cvm-vpc"
-    subnetIdRef:
-      name: "example-redis-subnet"
+    vpcId: vpc-eys56o52
+    subnetId: subnet-lvtjw1lz
