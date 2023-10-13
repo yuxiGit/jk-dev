@@ -6,7 +6,7 @@ spec:
   forProvider:
     name: "redis-crossplane-example"
     availabilityZone: "ap-hongkong-1"
-    memSize: "1024"
+    memSize: 1024
     passwordSecretRef:
       name: redis
       namespace: crossplane-system
