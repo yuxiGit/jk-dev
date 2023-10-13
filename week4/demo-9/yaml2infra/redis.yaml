@@ -7,6 +7,7 @@ spec:
     name: "redis-crossplane-example"
     availabilityZone: "ap-hongkong-1"
     memSize: 1024
+    type: "cluster_redis5.0"
     passwordSecretRef:
       name: redis
       namespace: crossplane-system
