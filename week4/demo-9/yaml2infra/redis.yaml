@@ -8,7 +8,7 @@ spec:
     availabilityZone: "ap-hongkong-2"
     memSize: 2048
     typeId: 8
-    noAuth: "true"
+    noAuth: true
     vpcidRef:
       name: "example-cvm-vpc"
     subnetIdRef:
