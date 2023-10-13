@@ -5,14 +5,11 @@ metadata:
 spec:
   forProvider:
     name: "redis-crossplane-example"
-    availabilityZone: "ap-hongkong-1"
+    availabilityZone: "ap-hongkong-2"
     memSize: 2048
     typeId: 8
-    passwordSecretRef:
-      name: redis
-      namespace: crossplane-system
-      key: password
+    noAuth: "true"
     vpcidRef:
       name: "example-cvm-vpc"
     subnetIdRef:
-      name: "example-cvm-subnet"
+      name: "example-redis-subnet"
