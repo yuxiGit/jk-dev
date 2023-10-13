@@ -1,0 +1,17 @@
+apiVersion: redis.tencentcloud.crossplane.io/v1alpha1
+kind: Instance
+metadata:
+    name: redis-example
+spec:
+  forProvider:
+    name: "redis-crossplane-example"
+    availabilityZone: "ap-hongkong-1"
+    memSize: "1024"
+    passwordSecretRef:
+      name: redis
+      namespace: crossplane-system
+      key: password
+    vpcidRef:
+      name: "example-cvm-vpc"
+    subnetIdRef:
+      name: "example-cvm-subnet"

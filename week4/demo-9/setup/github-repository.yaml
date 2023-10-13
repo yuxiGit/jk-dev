@@ -6,9 +6,9 @@ metadata:
   labels:
     argocd.argoproj.io/secret-type: repository
 stringData:
-  url: https://github.com/devops-advanced-camp/code.git
-  password: "" # your github personal access token
-  username: lyzhang1999
+  url: https://github.com/yuxiGit/jk-dev.git
+  password: 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 # your github personal access token
+  username: yuxiGit
   insecure: "true"
   forceHttpBasicAuth: "true"
   enableLfs: "true"
