@@ -8,6 +8,7 @@ spec:
     availabilityZone: "ap-hongkong-1"
     memSize: 1024
     type: "cluster_redis5.0"
+    typeId: 8
     passwordSecretRef:
       name: redis
       namespace: crossplane-system
