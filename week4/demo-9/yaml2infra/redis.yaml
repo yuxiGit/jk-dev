@@ -8,9 +8,10 @@ spec:
     availabilityZone: "ap-hongkong-2"
     memSize: 2048
     typeId: 8
-    noAuth: true
-    vpcId: vpc-6n868mj6
-    subnetId: subnet-k9ev9oh7
+    passwordSecretRef:
+      name: "redis"
+      key: "password"
+      namespace: "crossplane-system"
     vpcidRef:
       name: "example-cvm-vpc"
     subnetIdRef:
