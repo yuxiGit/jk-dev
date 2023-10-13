@@ -7,7 +7,7 @@ metadata:
     argocd.argoproj.io/secret-type: repository
 stringData:
   url: https://github.com/yuxiGit/jk-dev.git
-  password: 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 # your github personal access token
+  password: "" # your github personal access token
   username: yuxiGit
   insecure: "true"
   forceHttpBasicAuth: "true"
