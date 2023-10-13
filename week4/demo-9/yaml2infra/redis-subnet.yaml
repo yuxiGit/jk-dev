@@ -5,7 +5,7 @@ metadata:
 spec:
   forProvider:
     availabilityZone: "ap-hongkong-2"
-    cidrBlock: "10.2.3.0/24"
+    cidrBlock: "10.3.3.0/24"
     name: "test-crossplane-redis-subnet"
     vpcidRef:
-      name: "example-cvm-vpc"
+      name: "example-redis-vpc"
